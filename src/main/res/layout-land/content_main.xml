@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="60dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.htetznaing.easycharge.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <RadioGroup
+        android:id="@+id/rGp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/topup"
+            android:text="Top Up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/transfer"
+            android:text="Transfer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+
+    <TextView
+        android:onClick="dev"
+        android:id="@+id/dev"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:text="Developed By Khun Htetz Naing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_above="@id/dev"
+        android:gravity="center_horizontal"
+        android:id="@+id/ll2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/fb"
+            android:src="@drawable/fb"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+        <ImageView
+            android:id="@+id/msg"
+            android:src="@drawable/msg"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+        <ImageView
+            android:id="@+id/share"
+            android:src="@drawable/share"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+        <ImageView
+            android:layout_marginBottom="5dp"
+            android:layout_above="@id/dev"
+            android:id="@+id/github"
+            android:src="@drawable/git"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:onClick="start"
+        android:background="@drawable/bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:src="@drawable/pff"
+            android:layout_width="70dp"
+            android:layout_height="80dp" />
+
+        <TextView
+            android:textSize="25sp"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:text="Start Scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>
